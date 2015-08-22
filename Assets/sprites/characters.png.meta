@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d1a925e67cfe34a3b8228214e6274352
-timeCreated: 1440269399
+timeCreated: 1440278858
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -15,8 +15,8 @@ TextureImporter:
     21300016: zergy_jump
     21300018: main
     21300020: zergy
-    21300022: characters_3
-    21300024: characters_4
+    21300022: __2
+    21300024: cursor1
     21300026: characters_5
     21300028: characters_6
     21300030: characters_7
@@ -29,10 +29,10 @@ TextureImporter:
     21300044: characters_14
     21300046: characters_15
     21300048: main_tired
-    21300050: characters_17
+    21300050: neki
     21300052: zergy_idle
-    21300054: characters_19
-    21300056: characters_20
+    21300054: __1
+    21300056: cursor_attack1
     21300058: characters_21
     21300060: characters_22
     21300062: characters_23
@@ -48,7 +48,7 @@ TextureImporter:
     21300082: characters_33
     21300084: zergy_jump
     21300086: characters_35
-    21300088: characters_36
+    21300088: cursor2
     21300090: characters_37
     21300092: characters_38
     21300094: characters_39
@@ -64,7 +64,7 @@ TextureImporter:
     21300114: characters_49
     21300116: characters_50
     21300118: characters_51
-    21300120: characters_52
+    21300120: curosor_attack2
     21300122: characters_53
     21300124: characters_54
     21300126: characters_55
@@ -320,8 +320,8 @@ TextureImporter:
         y: 240
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_1
       rect:
@@ -340,10 +340,10 @@ TextureImporter:
         y: 240
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_3
+    - name: __2
       rect:
         serializedVersion: 2
         x: 48
@@ -353,7 +353,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_4
+    - name: cursor1
       rect:
         serializedVersion: 2
         x: 64
@@ -480,10 +480,10 @@ TextureImporter:
         y: 224
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_17
+    - name: neki
       rect:
         serializedVersion: 2
         x: 16
@@ -500,10 +500,10 @@ TextureImporter:
         y: 224
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_19
+    - name: __1
       rect:
         serializedVersion: 2
         x: 48
@@ -513,7 +513,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_20
+    - name: cursor_attack1
       rect:
         serializedVersion: 2
         x: 64
@@ -640,8 +640,8 @@ TextureImporter:
         y: 208
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_33
       rect:
@@ -660,8 +660,8 @@ TextureImporter:
         y: 208
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_35
       rect:
@@ -673,7 +673,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_36
+    - name: cursor2
       rect:
         serializedVersion: 2
         x: 64
@@ -800,8 +800,8 @@ TextureImporter:
         y: 192
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_49
       rect:
@@ -833,7 +833,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_52
+    - name: curosor_attack2
       rect:
         serializedVersion: 2
         x: 64
@@ -960,8 +960,8 @@ TextureImporter:
         y: 176
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_65
       rect:

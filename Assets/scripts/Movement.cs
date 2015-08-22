@@ -4,35 +4,54 @@ using System.Collections;
 public class Movement : MonoBehaviour {
 
 	private Vector3 target;
-	private Vector3 NORMAL = new Vector3(0, 0, 0);
-	private float speed = 5;
+	private float speed = 4;
 	private Animator animator;
 	private Collider2D cl;
 	private float stopAt;
+	private GameObject cursor;
+	public GameObject[] cursors;
 
 	// Use this for initialization
 	void Start () {
 		target = transform.position;
 		animator = gameObject.GetComponent<Animator>();
 	}
+
+	private Vector3 setTarget(bool attack) {
+
+		target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		target.z = transform.position.z;
+
+		cl = Physics2D.OverlapPoint(target);
+		if (cursor != null) {
+			Destroy(cursor);
+		}
+
+		cursor = Instantiate(cursors[0], target, Quaternion.identity) as GameObject;
+
+		if (attack) {
+			Animator anim = cursor.GetComponent<Animator>();
+			anim.SetBool("isAttack", true);
+		}
+
+		return target;
+	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
 		if (Input.GetMouseButtonDown(0)) {
-			target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-			target.z = transform.position.z;
-
-			cl = Physics2D.OverlapPoint(target);
+			setTarget(false);
+		}
+		if (Input.GetKeyDown(KeyCode.A)) {
+			setTarget(true);
 		}
 
 		// If we clicked on an enemy, we can start attacking from afar
-		Debug.Log (cl == null);
 		if (cl == null) {
 			stopAt = 0.1f;
 		} else {
 			stopAt = 2f;
 		}
-		Debug.Log (stopAt);
 
 		float dist = Vector3.Distance(transform.position, target);
 
@@ -41,6 +60,9 @@ public class Movement : MonoBehaviour {
 			transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
 		} else {
 			animator.SetFloat("speed", 0f);
+			if (cursor != null){ 
+				Destroy (cursor);
+			}
 		}
 	}
 
