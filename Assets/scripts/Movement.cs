@@ -5,10 +5,13 @@ public class Movement : MonoBehaviour {
 
 	private Vector3 target;
 	private Vector3 NORMAL = new Vector3(0, 0, 0);
+	private float speed = 5;
+	private Animator animator;
 
 	// Use this for initialization
 	void Start () {
 		target = transform.position;
+		animator = gameObject.GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -20,8 +23,10 @@ public class Movement : MonoBehaviour {
 		float dist = Vector3.Distance(transform.position, target);
 		if (dist > 0) {
 			this.Animate();
+		} else {
+			animator.SetFloat("speed", 0f);
 		}
-		transform.position = Vector3.MoveTowards(transform.position, target, 5 * Time.deltaTime);
+		transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
 
 	}
 
@@ -31,5 +36,7 @@ public class Movement : MonoBehaviour {
 		} else {
 			transform.localEulerAngles = new Vector3(0, 180, 0);
 		}
+		animator.SetFloat ("speed", speed);
+
 	}
 }
