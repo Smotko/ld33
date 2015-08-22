@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d1a925e67cfe34a3b8228214e6274352
-timeCreated: 1440256463
+timeCreated: 1440268844
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -10,6 +10,9 @@ TextureImporter:
     21300006: main_idle
     21300008: main_walk1
     21300010: main_walk2
+    21300012: zergy
+    21300014: zergy_idle
+    21300016: zergy_jump
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -110,6 +113,36 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zergy
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zergy_idle
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zergy_jump
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 208
         width: 16
         height: 16
       alignment: 0
