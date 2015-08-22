@@ -101,7 +101,8 @@ GameObject:
   - 114: {fileID: 309370418}
   - 114: {fileID: 309370415}
   - 95: {fileID: 309370419}
-  m_Layer: 8
+  - 114: {fileID: 309370420}
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -218,6 +219,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &309370420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 309370412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba25ef0d05f04dabb6476052a705d48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &769263391
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +239,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 769263393}
   - 212: {fileID: 769263392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,7 +379,10 @@ GameObject:
   - 4: {fileID: 1500600589}
   - 212: {fileID: 1500600588}
   - 95: {fileID: 1500600587}
-  m_Layer: 0
+  - 50: {fileID: 1500600591}
+  - 61: {fileID: 1500600590}
+  - 114: {fileID: 1500600592}
+  m_Layer: 9
   m_Name: zergy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -413,7 +428,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 139475285
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300012, guid: d1a925e67cfe34a3b8228214e6274352, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -429,3 +444,43 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!61 &1500600590
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1500600586}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: .0162205398, y: -.151391625}
+  serializedVersion: 2
+  m_Size: {x: .686402977, y: .416060209}
+--- !u!50 &1500600591
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1500600586}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &1500600592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1500600586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba25ef0d05f04dabb6476052a705d48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

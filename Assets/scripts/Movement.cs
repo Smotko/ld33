@@ -7,6 +7,8 @@ public class Movement : MonoBehaviour {
 	private Vector3 NORMAL = new Vector3(0, 0, 0);
 	private float speed = 5;
 	private Animator animator;
+	private Collider2D cl;
+	private float stopAt;
 
 	// Use this for initialization
 	void Start () {
@@ -19,15 +21,27 @@ public class Movement : MonoBehaviour {
 		if (Input.GetMouseButtonDown(0)) {
 			target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			target.z = transform.position.z;
+
+			cl = Physics2D.OverlapPoint(target);
 		}
+
+		// If we clicked on an enemy, we can start attacking from afar
+		Debug.Log (cl == null);
+		if (cl == null) {
+			stopAt = 0.1f;
+		} else {
+			stopAt = 2f;
+		}
+		Debug.Log (stopAt);
+
 		float dist = Vector3.Distance(transform.position, target);
-		if (dist > 0) {
+
+		if (dist > stopAt) {
 			this.Animate();
+			transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
 		} else {
 			animator.SetFloat("speed", 0f);
 		}
-		transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
-
 	}
 
 	private void Animate() {
