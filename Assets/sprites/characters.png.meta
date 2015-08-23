@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d1a925e67cfe34a3b8228214e6274352
-timeCreated: 1440317789
+timeCreated: 1440325887
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -82,7 +82,7 @@ TextureImporter:
     21300150: characters_67
     21300152: characters_68
     21300154: characters_69
-    21300156: characters_70
+    21300156: main_attack
     21300158: characters_71
     21300160: characters_72
     21300162: characters_73
@@ -341,7 +341,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: zergy
       rect:
@@ -371,7 +371,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_5
       rect:
@@ -381,7 +381,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_6
       rect:
@@ -391,7 +391,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_7
       rect:
@@ -401,7 +401,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_8
       rect:
@@ -411,7 +411,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_9
       rect:
@@ -421,7 +421,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_10
       rect:
@@ -431,7 +431,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_11
       rect:
@@ -441,7 +441,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_12
       rect:
@@ -451,7 +451,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_13
       rect:
@@ -461,7 +461,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: main_tired
       rect:
@@ -511,7 +511,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_19
       rect:
@@ -521,7 +521,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_20
       rect:
@@ -531,7 +531,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_21
       rect:
@@ -541,7 +541,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_22
       rect:
@@ -551,7 +551,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_23
       rect:
@@ -561,7 +561,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_24
       rect:
@@ -571,7 +571,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_25
       rect:
@@ -581,7 +581,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_26
       rect:
@@ -591,7 +591,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_27
       rect:
@@ -601,7 +601,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: main_idle
       rect:
@@ -621,7 +621,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: zergly_jump
       rect:
@@ -651,7 +651,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_33
       rect:
@@ -661,7 +661,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_34
       rect:
@@ -671,7 +671,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_35
       rect:
@@ -681,7 +681,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_36
       rect:
@@ -691,7 +691,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_37
       rect:
@@ -701,7 +701,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_38
       rect:
@@ -711,7 +711,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_39
       rect:
@@ -721,7 +721,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_40
       rect:
@@ -731,7 +731,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_41
       rect:
@@ -741,7 +741,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: main_walk1
       rect:
@@ -761,7 +761,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_44
       rect:
@@ -771,7 +771,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: cursor_attack2
       rect:
@@ -791,7 +791,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_47
       rect:
@@ -801,7 +801,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_48
       rect:
@@ -811,7 +811,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_49
       rect:
@@ -821,7 +821,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_50
       rect:
@@ -831,7 +831,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_51
       rect:
@@ -841,7 +841,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_52
       rect:
@@ -851,7 +851,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_53
       rect:
@@ -861,7 +861,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_54
       rect:
@@ -871,7 +871,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_55
       rect:
@@ -881,7 +881,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: main_walk2
       rect:
@@ -901,7 +901,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_58
       rect:
@@ -911,7 +911,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_59
       rect:
@@ -921,7 +921,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_60
       rect:
@@ -931,7 +931,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_61
       rect:
@@ -941,7 +941,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_62
       rect:
@@ -951,7 +951,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_63
       rect:
@@ -961,7 +961,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_64
       rect:
@@ -971,7 +971,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_65
       rect:
@@ -981,7 +981,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_66
       rect:
@@ -991,7 +991,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_67
       rect:
@@ -1001,7 +1001,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_68
       rect:
@@ -1011,7 +1011,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_69
       rect:
@@ -1021,9 +1021,9 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_70
+    - name: main_attack
       rect:
         serializedVersion: 2
         x: 0
@@ -1031,7 +1031,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_71
       rect:
@@ -1041,7 +1041,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_72
       rect:
@@ -1051,7 +1051,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_73
       rect:
@@ -1061,7 +1061,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_74
       rect:
@@ -1071,7 +1071,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_75
       rect:
@@ -1081,7 +1081,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_76
       rect:
@@ -1091,7 +1091,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_77
       rect:
@@ -1101,7 +1101,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_78
       rect:
@@ -1111,7 +1111,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_79
       rect:
@@ -1121,7 +1121,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_80
       rect:
@@ -1131,7 +1131,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_81
       rect:
@@ -1141,7 +1141,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_82
       rect:
@@ -1151,7 +1151,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_83
       rect:
@@ -1161,7 +1161,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_84
       rect:
@@ -1171,7 +1171,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_85
       rect:
@@ -1181,7 +1181,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_86
       rect:
@@ -1191,7 +1191,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_87
       rect:
@@ -1201,7 +1201,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_88
       rect:
@@ -1211,7 +1211,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_89
       rect:
@@ -1221,7 +1221,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_90
       rect:
@@ -1231,7 +1231,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_91
       rect:
@@ -1241,7 +1241,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_92
       rect:
@@ -1251,7 +1251,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_93
       rect:
@@ -1261,7 +1261,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_94
       rect:
@@ -1271,7 +1271,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_95
       rect:
@@ -1281,7 +1281,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_96
       rect:
@@ -1291,7 +1291,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_97
       rect:
@@ -1301,7 +1301,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_98
       rect:
@@ -1311,7 +1311,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_99
       rect:
@@ -1321,7 +1321,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_100
       rect:
@@ -1331,7 +1331,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_101
       rect:
@@ -1341,7 +1341,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_102
       rect:
@@ -1351,7 +1351,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_103
       rect:
@@ -1361,7 +1361,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_104
       rect:
@@ -1371,7 +1371,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_105
       rect:
@@ -1381,7 +1381,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_106
       rect:
@@ -1391,7 +1391,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_107
       rect:
@@ -1401,7 +1401,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_108
       rect:
@@ -1411,7 +1411,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_109
       rect:
@@ -1421,7 +1421,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_110
       rect:
@@ -1431,7 +1431,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_111
       rect:
@@ -1441,7 +1441,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_112
       rect:
@@ -1451,7 +1451,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_113
       rect:
@@ -1461,7 +1461,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_114
       rect:
@@ -1471,7 +1471,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_115
       rect:
@@ -1481,7 +1481,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_116
       rect:
@@ -1491,7 +1491,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_117
       rect:
@@ -1501,7 +1501,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_118
       rect:
@@ -1511,7 +1511,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_119
       rect:
@@ -1521,7 +1521,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_120
       rect:
@@ -1531,7 +1531,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_121
       rect:
@@ -1541,7 +1541,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_122
       rect:
@@ -1551,7 +1551,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_123
       rect:
@@ -1561,7 +1561,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_124
       rect:
@@ -1571,7 +1571,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_125
       rect:
@@ -1581,7 +1581,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_126
       rect:
@@ -1591,7 +1591,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_127
       rect:
@@ -1601,7 +1601,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_128
       rect:
@@ -1611,7 +1611,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_129
       rect:
@@ -1621,7 +1621,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_130
       rect:
@@ -1631,7 +1631,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_131
       rect:
@@ -1641,7 +1641,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_132
       rect:
@@ -1651,7 +1651,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_133
       rect:
@@ -1661,7 +1661,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_134
       rect:
@@ -1671,7 +1671,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_135
       rect:
@@ -1681,7 +1681,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_136
       rect:
@@ -1691,7 +1691,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_137
       rect:
@@ -1701,7 +1701,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_138
       rect:
@@ -1711,7 +1711,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_139
       rect:
@@ -1721,7 +1721,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_140
       rect:
@@ -1731,7 +1731,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_141
       rect:
@@ -1741,7 +1741,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_142
       rect:
@@ -1751,7 +1751,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_143
       rect:
@@ -1761,7 +1761,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_144
       rect:
@@ -1771,7 +1771,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_145
       rect:
@@ -1781,7 +1781,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_146
       rect:
@@ -1791,7 +1791,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_147
       rect:
@@ -1801,7 +1801,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_148
       rect:
@@ -1811,7 +1811,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_149
       rect:
@@ -1821,7 +1821,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_150
       rect:
@@ -1831,7 +1831,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_151
       rect:
@@ -1841,7 +1841,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_152
       rect:
@@ -1851,7 +1851,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_153
       rect:
@@ -1861,7 +1861,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_154
       rect:
@@ -1871,7 +1871,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_155
       rect:
@@ -1881,7 +1881,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_156
       rect:
@@ -1891,7 +1891,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_157
       rect:
@@ -1901,7 +1901,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_158
       rect:
@@ -1911,7 +1911,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_159
       rect:
@@ -1921,7 +1921,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_160
       rect:
@@ -1931,7 +1931,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_161
       rect:
@@ -1941,7 +1941,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_162
       rect:
@@ -1951,7 +1951,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_163
       rect:
@@ -1961,7 +1961,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_164
       rect:
@@ -1971,7 +1971,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_165
       rect:
@@ -1981,7 +1981,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_166
       rect:
@@ -1991,7 +1991,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_167
       rect:
@@ -2001,7 +2001,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_168
       rect:
@@ -2011,7 +2011,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_169
       rect:
@@ -2021,7 +2021,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_170
       rect:
@@ -2031,7 +2031,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_171
       rect:
@@ -2041,7 +2041,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_172
       rect:
@@ -2051,7 +2051,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_173
       rect:
@@ -2061,7 +2061,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_174
       rect:
@@ -2071,7 +2071,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_175
       rect:
@@ -2081,7 +2081,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_176
       rect:
@@ -2091,7 +2091,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_177
       rect:
@@ -2101,7 +2101,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_178
       rect:
@@ -2111,7 +2111,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_179
       rect:
@@ -2121,7 +2121,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_180
       rect:
@@ -2131,7 +2131,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_181
       rect:
@@ -2141,7 +2141,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_182
       rect:
@@ -2151,7 +2151,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_183
       rect:
@@ -2161,7 +2161,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_184
       rect:
@@ -2171,7 +2171,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_185
       rect:
@@ -2181,7 +2181,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_186
       rect:
@@ -2191,7 +2191,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_187
       rect:
@@ -2201,7 +2201,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_188
       rect:
@@ -2211,7 +2211,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_189
       rect:
@@ -2221,7 +2221,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_190
       rect:
@@ -2231,7 +2231,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_191
       rect:
@@ -2241,7 +2241,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_192
       rect:
@@ -2251,7 +2251,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_193
       rect:
@@ -2261,7 +2261,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_194
       rect:
@@ -2271,7 +2271,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: characters_195
       rect:
@@ -2281,7 +2281,7 @@ TextureImporter:
         width: 18
         height: 18
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

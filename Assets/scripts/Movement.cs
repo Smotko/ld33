@@ -2,77 +2,100 @@
 using System.Collections;
 
 public class Movement : MonoBehaviour {
-
-	private Vector3 target;
+	private float STOP_AT = 0.1f;
+	private Vector3 moveTo;
+	private GameObject target;
 	private float speed = 4;
 	private Animator animator;
 	private Collider2D cl;
-	private float stopAt;
 	private GameObject cursor;
+	private bool isAttackMove;
 	public GameObject[] cursors;
+
 
 	// Use this for initialization
 	void Start () {
-		target = transform.position;
+		moveTo = transform.position;
 		animator = gameObject.GetComponent<Animator>();
 	}
+	void Update() {
+		//Debug.Log(target);
+	}
+	private Vector3 setMoveTo(bool attack) {
 
-	private Vector3 setTarget(bool attack) {
+		moveTo = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		moveTo.z = transform.position.z;
 
-		target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		target.z = transform.position.z;
+		// Check if we have a target
+		cl = Physics2D.OverlapPoint(moveTo);
+		bool attackingTarget = cl != null && cl.gameObject.tag == "enemy";
+		if (attackingTarget) {
+			gameObject.SendMessage("SetTarget", cl.gameObject);
+		}
+		else {
+			gameObject.SendMessage("UnsetTarget");
+		}
 
-		cl = Physics2D.OverlapPoint(target);
+		// Remove previous cursor if applicable
 		if (cursor != null) {
 			Destroy(cursor);
 		}
+		// Set new cursor
+		cursor = Instantiate(cursors[0], moveTo, Quaternion.identity) as GameObject;
+		cursor.SendMessage("ShowAt", attackingTarget || attack);
 
-		cursor = Instantiate(cursors[0], target, Quaternion.identity) as GameObject;
-		cursor.SendMessage("ShowAt", attack || cl != null);
-
-		return target;
+		isAttackMove = attack;
+		return moveTo;
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
 		if (Input.GetMouseButtonDown(0)) {
-			setTarget(false);
+			setMoveTo(false);
 		}
 		if (Input.GetKeyDown(KeyCode.A)) {
-			setTarget(true);
+			setMoveTo(true);
 		}
 
-		// If we clicked on an enemy, we can start attacking from afar
-		if (cl == null) {
-			stopAt = 0.1f;
-		} else {
-			stopAt = 2f;
-		}
+		float dist = Vector3.Distance(transform.position, moveTo);
 
-		float dist = Vector3.Distance(transform.position, target);
-
-		if (dist > stopAt) {
-			this.Animate();
-			transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
+		if (dist > STOP_AT) {
+			Move();
 		} else {
-			animator.SetFloat("speed", 0f);
-			if (cursor != null){ 
-				Destroy(cursor, 0.5f);
-			}
+			StopMove();
 		}
 	}
 
-	private void Animate() {
-		if (transform.position.x - target.x < 0) {
+	private void Move() {
+		// Turn the character left or right
+		if (transform.position.x - moveTo.x < 0) {
 			transform.localEulerAngles = Vector3.zero;
 		} else {
 			transform.localEulerAngles = new Vector3(0, 180, 0);
 		}
-		animator.SetFloat ("speed", speed);
-
+		// Make the character move
+		animator.SetFloat("speed", speed);
+		transform.position = Vector3.MoveTowards(transform.position, moveTo, speed * Time.deltaTime);
+	}
+	private void StopMove() {
+		animator.SetFloat("speed", 0f);
+		if (cursor != null){ 
+			Destroy(cursor, 0.5f);
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		
+		if (isAttackMove) {
+			gameObject.SendMessage("SetTarget", other.gameObject);
+		}
+	}
+	void OnTriggerStay2D(Collider2D other) {
+		if (isAttackMove) {
+			gameObject.SendMessage("SetTarget", other.gameObject);
+		}
+	}
+
+	void Stop() {
+		moveTo = transform.position;
 	}
 }

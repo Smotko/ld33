@@ -87,6 +87,34 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &169289489 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 158938, guid: b2129c9ea319b423fb1948e0060f9840, type: 2}
+  m_PrefabInternal: {fileID: 1494654953}
+--- !u!114 &169289491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 169289489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d855ef10b276046098cbfc27a8de4c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &169289499
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 169289489}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: .5625}
+  serializedVersion: 2
+  m_Radius: 1.89999998
 --- !u!1 &769263391
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,6 +181,7 @@ GameObject:
   - 92: {fileID: 1221867513}
   - 124: {fileID: 1221867512}
   - 81: {fileID: 1221867511}
+  - 114: {fileID: 1221867516}
   m_Layer: 10
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -226,6 +255,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1221867516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1221867510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f71ff496d1f1c407a981fa54ee919b9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 169289489}
 --- !u!1001 &1494654953
 Prefab:
   m_ObjectHideFlags: 0
@@ -277,7 +318,12 @@ Prefab:
       propertyPath: cursors.Array.data[0]
       value: 
       objectReference: {fileID: 159276, guid: 427569f4d258d4dbcbd88837e417fb35, type: 2}
-    m_RemovedComponents: []
+    - target: {fileID: 6150394, guid: b2129c9ea319b423fb1948e0060f9840, type: 2}
+      propertyPath: m_Offset.y
+      value: .200000003
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11467594, guid: b2129c9ea319b423fb1948e0060f9840, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2129c9ea319b423fb1948e0060f9840, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1534559922

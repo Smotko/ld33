@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 433302}
   - 212: {fileID: 21271680}
   - 95: {fileID: 9509176}
+  - 114: {fileID: 11471164}
   m_Layer: 0
   m_Name: cursor
   m_TagString: Untagged
@@ -46,6 +47,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11471164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5850b6cb051d84535870037d0cb04dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21271680
 SpriteRenderer:
   m_ObjectHideFlags: 1
