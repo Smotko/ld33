@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d1a925e67cfe34a3b8228214e6274352
-timeCreated: 1440325887
+timeCreated: 1440330593
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -268,7 +268,7 @@ TextureImporter:
     21300522: characters_253
     21300524: characters_254
     21300526: characters_255
-    21300528: characters_4
+    21300528: projectile
     21300530: characters_18
     21300532: characters_19
     21300534: characters_20
@@ -363,7 +363,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_4
+    - name: projectile
       rect:
         serializedVersion: 2
         x: 72

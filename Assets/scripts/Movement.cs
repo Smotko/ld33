@@ -30,7 +30,7 @@ public class Movement : MonoBehaviour {
 		cl = Physics2D.OverlapPoint(moveTo);
 		bool attackingTarget = cl != null && cl.gameObject.tag == "enemy";
 		if (attackingTarget) {
-			gameObject.SendMessage("SetTarget", cl.gameObject);
+			gameObject.SendMessage("SetTarget", new object[] {cl.gameObject, true});
 		}
 		else {
 			gameObject.SendMessage("UnsetTarget");
@@ -85,14 +85,12 @@ public class Movement : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		if (isAttackMove) {
-			gameObject.SendMessage("SetTarget", other.gameObject);
+		if (isAttackMove && other.gameObject.tag == "enemy") {
+			gameObject.SendMessage("SetTarget", new object[] {other.gameObject, false});
 		}
 	}
 	void OnTriggerStay2D(Collider2D other) {
-		if (isAttackMove) {
-			gameObject.SendMessage("SetTarget", other.gameObject);
-		}
+
 	}
 
 	void Stop() {
