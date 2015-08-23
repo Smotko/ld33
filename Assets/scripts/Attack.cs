@@ -9,6 +9,7 @@ public class Attack : MonoBehaviour {
 	private float lastAttack = -1;
 	private GameObject target;
 	private Animator anim;
+	public bool hasAttackedZergy = false;
 
 
 	// Use this for initialization
@@ -38,10 +39,9 @@ public class Attack : MonoBehaviour {
 		if (lastAttack < 0) {
 			anim.SetBool("attacking", true);
 			GameObject g = Instantiate(basicAttack, transform.position, Quaternion.identity) as GameObject;
+			hasAttackedZergy = true;
 			g.SendMessage("SetTarget", target);
 			lastAttack = BASIC_COOLDOWN;
-		} else {
-
 		}
 
 	}
