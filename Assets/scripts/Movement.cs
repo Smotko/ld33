@@ -28,11 +28,7 @@ public class Movement : MonoBehaviour {
 		}
 
 		cursor = Instantiate(cursors[0], target, Quaternion.identity) as GameObject;
-
-		if (attack || cl != null) {
-			Animator anim = cursor.GetComponent<Animator>();
-			anim.SetBool("isAttack", true);
-		}
+		cursor.SendMessage("ShowAt", attack || cl != null);
 
 		return target;
 	}
@@ -61,7 +57,7 @@ public class Movement : MonoBehaviour {
 		} else {
 			animator.SetFloat("speed", 0f);
 			if (cursor != null){ 
-				Destroy (cursor);
+				Destroy(cursor, 0.5f);
 			}
 		}
 	}
@@ -74,5 +70,9 @@ public class Movement : MonoBehaviour {
 		}
 		animator.SetFloat ("speed", speed);
 
+	}
+
+	void OnTriggerEnter2D(Collider2D other) {
+		
 	}
 }
