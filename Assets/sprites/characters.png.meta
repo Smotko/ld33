@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d1a925e67cfe34a3b8228214e6274352
-timeCreated: 1440330593
+timeCreated: 1440344752
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -58,7 +58,7 @@ TextureImporter:
     21300102: characters_43
     21300104: characters_44
     21300106: cursor_attack2
-    21300108: characters_46
+    21300108: health_player_bar
     21300110: characters_47
     21300112: main_walk1
     21300114: characters_49
@@ -72,7 +72,7 @@ TextureImporter:
     21300130: characters_57
     21300132: characters_58
     21300134: characters_59
-    21300136: characters_60
+    21300136: health_monster_bar
     21300138: characters_61
     21300140: characters_62
     21300142: characters_63
@@ -269,10 +269,10 @@ TextureImporter:
     21300524: characters_254
     21300526: characters_255
     21300528: projectile
-    21300530: characters_18
+    21300530: health_monster
     21300532: characters_19
     21300534: characters_20
-    21300536: characters_32
+    21300536: health_player
     21300538: characters_34
     21300540: characters_36
     21300542: characters_48
@@ -503,7 +503,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_18
+    - name: health_monster
       rect:
         serializedVersion: 2
         x: 72
@@ -643,7 +643,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_32
+    - name: health_player
       rect:
         serializedVersion: 2
         x: 72
@@ -783,7 +783,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_46
+    - name: health_player_bar
       rect:
         serializedVersion: 2
         x: 72
@@ -923,7 +923,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_60
+    - name: health_monster_bar
       rect:
         serializedVersion: 2
         x: 72
