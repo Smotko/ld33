@@ -32,6 +32,7 @@ GameObject:
   - 114: {fileID: 11423972}
   - 58: {fileID: 5811484}
   - 114: {fileID: 11439332}
+  - 114: {fileID: 11435552}
   m_Layer: 9
   m_Name: zergy
   m_TagString: enemy
@@ -132,6 +133,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ba25ef0d05f04dabb6476052a705d48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11435552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2477726a792e14c74b443de763111db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11439332

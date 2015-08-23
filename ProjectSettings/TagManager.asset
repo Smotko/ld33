@@ -8,6 +8,7 @@ TagManager:
   - score
   - click
   - enemy
+  - core
   layers:
   - Default
   - TransparentFX
