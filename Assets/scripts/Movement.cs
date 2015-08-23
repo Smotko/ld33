@@ -29,7 +29,7 @@ public class Movement : MonoBehaviour {
 
 		cursor = Instantiate(cursors[0], target, Quaternion.identity) as GameObject;
 
-		if (attack) {
+		if (attack || cl != null) {
 			Animator anim = cursor.GetComponent<Animator>();
 			anim.SetBool("isAttack", true);
 		}
