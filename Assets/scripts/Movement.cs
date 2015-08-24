@@ -19,7 +19,6 @@ public class Movement : MonoBehaviour {
 		animator = gameObject.GetComponent<Animator>();
 	}
 	void Update() {
-		//Debug.Log(target);
 	}
 	private Vector3 setMoveTo(bool attack) {
 
@@ -28,11 +27,12 @@ public class Movement : MonoBehaviour {
 
 		// Check if we have a target
 		cl = Physics2D.OverlapPoint(moveTo);
+
 		bool attackingTarget = cl != null && cl.gameObject.tag == "enemy";
 		if (attackingTarget) {
 			gameObject.SendMessage("SetTarget", new object[] {cl.gameObject, true});
 		}
-		else {
+		else if(!attack) {
 			gameObject.SendMessage("UnsetTarget");
 		}
 

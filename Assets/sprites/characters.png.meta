@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d1a925e67cfe34a3b8228214e6274352
-timeCreated: 1440344752
+timeCreated: 1440373806
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -27,7 +27,7 @@ TextureImporter:
     21300040: characters_12
     21300042: characters_13
     21300044: main_tired
-    21300046: characters_15
+    21300046: shield
     21300048: main_tired
     21300050: neki
     21300052: zergy_idle
@@ -473,7 +473,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_15
+    - name: shield
       rect:
         serializedVersion: 2
         x: 18

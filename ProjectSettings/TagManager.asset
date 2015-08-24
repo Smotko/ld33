@@ -9,6 +9,11 @@ TagManager:
   - click
   - enemy
   - core
+  - shield
+  - text_end1
+  - text_end2
+  - text_end3
+  - text_end4
   layers:
   - Default
   - TransparentFX

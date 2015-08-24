@@ -6,8 +6,11 @@ public class EnemyAi : MonoBehaviour {
 	private GameObject player;
 	private Attack a;
 	private GameObject core;
+	private GameObject target;
 	private float lastAttack = 0;
 	private float ATTACK_COOLDOWN = 1;
+	private float TARGET_CHANGE_COOLDOWN = 2;
+	private float lastTarget = 0;
 	private Animator anim;
 
 	// Use this for initialization
@@ -18,19 +21,38 @@ public class EnemyAi : MonoBehaviour {
 		anim = GetComponent<Animator>();
 		a = player.GetComponent<Attack>();
 	}
-	
+
+	private void ChangeTarget(GameObject newTarget) {
+		if (lastTarget < 0) {
+			lastTarget = TARGET_CHANGE_COOLDOWN;
+			target = newTarget;
+		}
+	}
+
 	// Update is called once per frame
 	void Update () {
-		GameObject target = core;
-		if (a.hasAttackedZergy) {
-			// Decide whether to attack the player or the core
-			target = player;
-		}
 
+
+		float playerDist = Vector3.Distance(transform.position, player.transform.position);
+		float coreDist = Vector3.Distance(transform.position, core.transform.position);
+		if (a.hasAttackedZergy) {
+			// Attack player if it's closer
+			if (coreDist * 2 < playerDist) {
+				ChangeTarget(core);
+			} else {
+				ChangeTarget(player);
+
+			}
+		} else {
+			ChangeTarget(core);
+		}
+		lastTarget -= Time.deltaTime;
+		if (!target) {
+			return;
+		}
 		float dist = Vector3.Distance(transform.position, target.transform.position);
 		lastAttack -= Time.deltaTime;
-		Debug.Log (dist);
-		if (dist > 1f) {
+		if (dist > 0.5f) {
 			anim.SetBool("attack", false);
 			transform.position = Vector3.MoveTowards(transform.position, target.transform.position, Time.deltaTime);
 		} else {
@@ -41,5 +63,10 @@ public class EnemyAi : MonoBehaviour {
 			}
 		}
 
+	}
+
+	void Hurt(int amount) {
+		target = player;
+		lastTarget = TARGET_CHANGE_COOLDOWN * 10;
 	}
 }
