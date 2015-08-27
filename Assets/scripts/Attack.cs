@@ -35,30 +35,6 @@ public class Attack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		lastAttack -= Time.deltaTime;
-		multiAttack -= Time.deltaTime;
-		lastShield -= Time.deltaTime;
-		shieldDuration -= Time.deltaTime;
-		if (shieldDuration < 0) {
-			shield.Disable();
-		}
-		if (target == null) {
-			anim.SetBool("attacking", false);
-			return;
-		}
-		float dist = Vector3.Distance(transform.position, target.transform.position);
-		// We need to stop
-		if (dist < DIST) {
-			gameObject.SendMessage("Stop");
-			// And Fire
-			FireBasic();
-		} else {
-			anim.SetBool("attacking", false);
-		}
-
-
-	}
-	void FixedUpdate() {
 
 		if (Input.GetKeyDown(KeyCode.W)) {
 			FireMulti();
@@ -69,7 +45,28 @@ public class Attack : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.R)) {
 			Application.LoadLevel (Application.loadedLevelName);
 		}
+
+		lastAttack -= Time.deltaTime;
+		multiAttack -= Time.deltaTime;
+		lastShield -= Time.deltaTime;
+		shieldDuration -= Time.deltaTime;
+		if (shieldDuration < 0) {
+			shield.Disable();
+		}
+		if (target == null) {
+			return;
+		}
+		float dist = Vector3.Distance(transform.position, target.transform.position);
+		// We need to stop
+		if (dist < DIST) {
+			gameObject.SendMessage("Stop");
+			// And Fire
+			FireBasic();
+		}
+
+
 	}
+
 	void Shield() {
 		if (lastShield < 0) {
 			shield.Enable();
@@ -79,7 +76,7 @@ public class Attack : MonoBehaviour {
 	}
 	void FireBasic() {
 		if (lastAttack < 0) {
-			anim.SetBool("attacking", true);
+			anim.SetTrigger("attacking");
 			GameObject g = Instantiate(basicAttack, transform.position, Quaternion.identity) as GameObject;
 			hasAttackedZergy = true;
 			g.SendMessage("SetTarget", target);
@@ -88,19 +85,15 @@ public class Attack : MonoBehaviour {
 
 	}
 	void FireMulti() {
-		Debug.Log ("MULTI 1" + multiAttack);
 		if (multiAttack < 0) {
-			Debug.Log ("MULTI 2");
 			GameObject[] all = GameObject.FindGameObjectsWithTag("enemy");
 			for (int i = 0; i < all.Length; i++) {
-				Debug.Log ("MULTI 3");
-				anim.SetBool("attacking", true);
+				anim.SetTrigger("attacking");
 				GameObject g = Instantiate(basicAttack, transform.position, Quaternion.identity) as GameObject;
 				hasAttackedZergy = true;
 				g.SendMessage("SetTarget", all[i]);
 				multiAttack = MULTI_COOLDOWN;
 			}
-
 		}
 	}
 

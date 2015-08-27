@@ -2,14 +2,18 @@
 using System.Collections;
 
 public class Spawner : MonoBehaviour {
-
+	
 	public GameObject monster;
 	public int cooldown; // In seconds
 	public float offset;
 	public int num;
 	public int spawned;
-	// Use this for initialization
+
+	private Transform parent;
+
 	void Start () {
+		parent = new GameObject("Monsters").transform;
+		parent.parent = transform;
 	}
 	
 	// Update is called once per frame
@@ -23,6 +27,7 @@ public class Spawner : MonoBehaviour {
 		
 	}
 	void Spawn() {
-		Instantiate(monster, transform.position, Quaternion.identity);
+		GameObject m = Instantiate(monster, transform.position, Quaternion.identity) as GameObject;
+		m.transform.parent = parent;
 	}
 }
