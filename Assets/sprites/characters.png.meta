@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d1a925e67cfe34a3b8228214e6274352
-timeCreated: 1440704659
+timeCreated: 1440709300
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -17,8 +17,8 @@ TextureImporter:
     21300020: zergy
     21300022: __2
     21300024: cursor1
-    21300026: characters_5
-    21300028: characters_6
+    21300026: multibtn_down
+    21300028: shield_down
     21300030: characters_7
     21300032: characters_8
     21300034: characters_9
@@ -270,8 +270,8 @@ TextureImporter:
     21300526: characters_255
     21300528: projectile
     21300530: health_monster
-    21300532: characters_19
-    21300534: characters_20
+    21300532: multibtn_up
+    21300534: shield_up
     21300536: health_player
     21300538: characters_34
     21300540: characters_36
@@ -373,7 +373,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_5
+    - name: multibtn_down
       rect:
         serializedVersion: 2
         x: 90
@@ -383,7 +383,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_6
+    - name: shield_down
       rect:
         serializedVersion: 2
         x: 108
@@ -513,7 +513,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_19
+    - name: multibtn_up
       rect:
         serializedVersion: 2
         x: 90
@@ -523,7 +523,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_20
+    - name: shield_up
       rect:
         serializedVersion: 2
         x: 108
