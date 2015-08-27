@@ -6,6 +6,8 @@ public class Health : MonoBehaviour {
 	public int health = 100;
 	public bool hasShield = false;
 	private Attack attack;
+	private SpriteRenderer sprite;
+	public GameObject spriteComponent;
 
 	public GameObject end1;
 	public GameObject end2;
@@ -16,6 +18,11 @@ public class Health : MonoBehaviour {
 		if (hasShield) {
 			attack = GetComponent<Attack>();
 		}
+		if (spriteComponent != null) {
+			sprite = spriteComponent.GetComponent<SpriteRenderer>();
+		} else {
+			sprite = GetComponent<SpriteRenderer>();
+		}
 
 	}
 	
@@ -23,13 +30,16 @@ public class Health : MonoBehaviour {
 	void Update () {
 		
 	}
-	
+	void ResetColor() {
+		sprite.color = Color.white;
+	}
 	void Hurt(int amount) {
 
 		if (hasShield && attack.isShielded()) {
 			return;
 		}
-
+		sprite.color = Color.red;
+		Invoke ("ResetColor", 0.1f);
 		health -= amount;
 		if (health < 0) {
 			if (gameObject.tag == "core"){

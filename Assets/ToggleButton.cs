@@ -22,11 +22,13 @@ public class ToggleButton : MonoBehaviour {
 		if (Input.GetKeyDown(key) && !inactive) {
 			inactive = true;
 			image.sprite = down;
+			image.color = Color.gray;
 			Invoke ("Deactivate", timeOut);
 		}
 	}
 	void Deactivate() {
 		image.sprite = up;
+		image.color = Color.white;
 		inactive = false;
 	}
 }

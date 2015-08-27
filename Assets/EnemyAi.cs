@@ -12,6 +12,7 @@ public class EnemyAi : MonoBehaviour {
 	private float TARGET_CHANGE_COOLDOWN = 2;
 	private float lastTarget = 0;
 	private Animator anim;
+	private SpriteRenderer sprite;
 
 	// Use this for initialization
 	void Start () {
@@ -20,6 +21,7 @@ public class EnemyAi : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag("Player");
 		anim = GetComponent<Animator>();
 		a = player.GetComponent<Attack>();
+		sprite = GetComponent<SpriteRenderer>();
 	}
 
 	private void ChangeTarget(GameObject newTarget) {
@@ -68,6 +70,12 @@ public class EnemyAi : MonoBehaviour {
 
 	void Hurt(int amount) {
 		target = player;
+
 		lastTarget = TARGET_CHANGE_COOLDOWN * 10;
+		sprite.color = Color.red;
+		Invoke ("ResetColor", 0.1f);
+	}
+	void ResetColor() {
+		sprite.color = Color.white;
 	}
 }
