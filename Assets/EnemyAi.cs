@@ -53,11 +53,12 @@ public class EnemyAi : MonoBehaviour {
 		float dist = Vector3.Distance(transform.position, target.transform.position);
 		lastAttack -= Time.deltaTime;
 		if (dist > 0.5f) {
-			anim.SetBool("attack", false);
+			anim.SetFloat("speed", 4f);
 			transform.position = Vector3.MoveTowards(transform.position, target.transform.position, Time.deltaTime);
 		} else {
+			anim.SetFloat("speed", 0f);
 			if (lastAttack < 0) {
-				anim.SetBool("attack", true);
+				anim.SetTrigger("attacking");
 				target.SendMessage("Hurt", 10);
 				lastAttack = ATTACK_COOLDOWN;
 			}

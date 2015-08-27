@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d1a925e67cfe34a3b8228214e6274352
-timeCreated: 1440373806
+timeCreated: 1440704659
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -56,7 +56,7 @@ TextureImporter:
     21300098: characters_41
     21300100: main_walk1
     21300102: characters_43
-    21300104: characters_44
+    21300104: zergy_calm
     21300106: cursor_attack2
     21300108: health_player_bar
     21300110: characters_47
@@ -763,7 +763,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_44
+    - name: zergy_calm
       rect:
         serializedVersion: 2
         x: 36
