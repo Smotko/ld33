@@ -20,7 +20,7 @@ public class Movement : MonoBehaviour {
 	}
 	void Update() {
 
-		if (GameManager.instance.coreDestroyed) {
+		if (!GameManager.instance.playerAlive) {
 			return;
 		}
 

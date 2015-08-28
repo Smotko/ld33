@@ -52,17 +52,19 @@ public class GameManager : MonoBehaviour {
 		Attack a = player.GetComponent<Attack>();
 		image.SetActive(true);
 		coreDestroyed = true;
-
+		if (!playerAlive) {
+			return;
+		}
 		if (!a.hasAttackedZergy) {
 			end2.SetActive(true);
-		} else if (playerAlive) {
-			end1.SetActive(true);
 		} else {
 			end3.SetActive(true);
 		}
 
 	}
 	void PlayerKilled(GameObject player) {
+		end1.SetActive(true);
+		image.SetActive(true);
 		playerAlive = false;
 		player.GetComponent<SpriteRenderer>().enabled = false;
 	}
