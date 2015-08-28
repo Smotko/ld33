@@ -43,7 +43,7 @@ public class Attack : MonoBehaviour {
 			Shield();
 		}
 		if (Input.GetKeyDown (KeyCode.R)) {
-			Application.LoadLevel (Application.loadedLevelName);
+			Application.LoadLevel(Application.loadedLevelName);
 		}
 
 		lastAttack -= Time.deltaTime;

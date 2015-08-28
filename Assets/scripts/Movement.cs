@@ -19,6 +19,25 @@ public class Movement : MonoBehaviour {
 		animator = gameObject.GetComponent<Animator>();
 	}
 	void Update() {
+
+		if (GameManager.instance.coreDestroyed) {
+			return;
+		}
+
+		if (Input.GetMouseButtonDown(0)) {
+			setMoveTo(false);
+		}
+		if (Input.GetKeyDown(KeyCode.A)) {
+			setMoveTo(true);
+		}
+		
+		float dist = Vector3.Distance(transform.position, moveTo);
+		
+		if (dist > STOP_AT) {
+			Move();
+		} else {
+			StopMove();
+		}
 	}
 	private Vector3 setMoveTo(bool attack) {
 
@@ -48,24 +67,6 @@ public class Movement : MonoBehaviour {
 		return moveTo;
 	}
 	
-	// Update is called once per frame
-	void FixedUpdate () {
-		if (Input.GetMouseButtonDown(0)) {
-			setMoveTo(false);
-		}
-		if (Input.GetKeyDown(KeyCode.A)) {
-			setMoveTo(true);
-		}
-
-		float dist = Vector3.Distance(transform.position, moveTo);
-
-		if (dist > STOP_AT) {
-			Move();
-		} else {
-			StopMove();
-		}
-	}
-
 	private void Move() {
 		// Turn the character left or right
 		if (transform.position.x - moveTo.x < 0) {

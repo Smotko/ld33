@@ -33,11 +33,16 @@ public class EnemyAi : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
+		if (GameManager.instance.coreDestroyed) {
+			return;
+		}
 
 		float playerDist = Vector3.Distance(transform.position, player.transform.position);
 		float coreDist = Vector3.Distance(transform.position, core.transform.position);
-		if (a.hasAttackedZergy) {
+		if (GameManager.instance.coreDestroyed) {
+			return;
+		}
+		if (a.hasAttackedZergy && GameManager.instance.playerAlive) {
 			// Attack player if it's closer
 			if (coreDist * 2 < playerDist) {
 				ChangeTarget(core);

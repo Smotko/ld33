@@ -18,6 +18,9 @@ public class Spawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (!GameManager.instance.gameActive || GameManager.instance.coreDestroyed){
+			return;
+		}
 		offset -= Time.deltaTime;
 		if (offset < 0 && spawned < num) {
 			offset = cooldown;

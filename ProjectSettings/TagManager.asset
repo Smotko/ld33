@@ -14,6 +14,7 @@ TagManager:
   - text_end2
   - text_end3
   - text_end4
+  - gm
   layers:
   - Default
   - TransparentFX
