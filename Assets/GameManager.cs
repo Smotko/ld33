@@ -41,8 +41,8 @@ public class GameManager : MonoBehaviour {
 			PlayerKilled(gameObject);
 		}
 		else if (gameObject.tag == "enemy") {
-			EnemyKilled();
-			Destroy(gameObject);
+			EnemyKilled(gameObject);
+
 		}
 
 	}
@@ -58,18 +58,18 @@ public class GameManager : MonoBehaviour {
 		if (!a.hasAttackedZergy) {
 			end2.SetActive(true);
 		} else {
-			end3.SetActive(true);
+			end1.SetActive(true);
 		}
 
 	}
 	void PlayerKilled(GameObject player) {
-		end1.SetActive(true);
+		end3.SetActive(true);
 		image.SetActive(true);
 		playerAlive = false;
 		player.GetComponent<SpriteRenderer>().enabled = false;
 	}
 
-	void EnemyKilled() {
+	void EnemyKilled(GameObject enemey) {
 		bool allCleared = true;
 		foreach(GameObject g in GameObject.FindGameObjectsWithTag("Respawn")){
 			Spawner s = g.GetComponent<Spawner>();
@@ -77,6 +77,8 @@ public class GameManager : MonoBehaviour {
 				allCleared = false;
 			}
 		}
+		Destroy(enemey);
+		allCleared = allCleared && GameObject.FindGameObjectsWithTag("enemy").Length <= 1;
 		if (allCleared) {
 			image.SetActive(true);
 			end4.SetActive(true);
