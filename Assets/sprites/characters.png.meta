@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d1a925e67cfe34a3b8228214e6274352
-timeCreated: 1440709300
+timeCreated: 1441662935
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -70,7 +70,7 @@ TextureImporter:
     21300126: characters_55
     21300128: main_walk2
     21300130: characters_57
-    21300132: characters_58
+    21300132: zergy_dead
     21300134: characters_59
     21300136: health_monster_bar
     21300138: characters_61
@@ -903,7 +903,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_58
+    - name: zergy_dead
       rect:
         serializedVersion: 2
         x: 36
