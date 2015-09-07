@@ -190,6 +190,7 @@ MonoBehaviour:
   health: 100
   hasShield: 0
   spriteComponent: {fileID: 0}
+  dead: {fileID: 107994, guid: cb2f9e0b777ce4ce2935295863241bf3, type: 2}
 --- !u!114 &11479010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -366,7 +367,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4278190303
+        rgba: 4279708782
       minMaxState: 0
     startSize:
       scalar: 1
