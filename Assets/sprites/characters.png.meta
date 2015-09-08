@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d1a925e67cfe34a3b8228214e6274352
-timeCreated: 1441662935
+timeCreated: 1441743630
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -70,7 +70,7 @@ TextureImporter:
     21300126: characters_55
     21300128: main_walk2
     21300130: characters_57
-    21300132: zergy_dead
+    21300132: zergy_dead1
     21300134: characters_59
     21300136: health_monster_bar
     21300138: characters_61
@@ -84,7 +84,7 @@ TextureImporter:
     21300154: characters_69
     21300156: main_attack
     21300158: characters_71
-    21300160: characters_72
+    21300160: zergy_dead2
     21300162: characters_73
     21300164: characters_74
     21300166: characters_75
@@ -98,7 +98,7 @@ TextureImporter:
     21300182: characters_83
     21300184: characters_84
     21300186: characters_85
-    21300188: characters_86
+    21300188: zergy_dead3
     21300190: characters_87
     21300192: characters_88
     21300194: characters_89
@@ -903,7 +903,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: zergy_dead
+    - name: zergy_dead1
       rect:
         serializedVersion: 2
         x: 36
@@ -1043,7 +1043,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_72
+    - name: zergy_dead2
       rect:
         serializedVersion: 2
         x: 36
@@ -1183,7 +1183,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: characters_86
+    - name: zergy_dead3
       rect:
         serializedVersion: 2
         x: 36

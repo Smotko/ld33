@@ -47,7 +47,9 @@ public class Health : MonoBehaviour {
 		health -= amount;
 		if (health <= 0) {
 			GameManager.instance.ObjectDestroyed(gameObject);
-			Instantiate(dead, transform.position, Quaternion.identity);
+			if (dead) {
+				Instantiate(dead, transform.position, Quaternion.identity);
+			}
 		}
 	}
 }
