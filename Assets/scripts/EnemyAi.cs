@@ -59,7 +59,7 @@ public class EnemyAi : MonoBehaviour {
 		}
 		float dist = Vector3.Distance(transform.position, target.transform.position);
 		lastAttack -= Time.deltaTime;
-		if (dist > 0.5f) {
+		if (dist > 0.7f) {
 			anim.SetFloat("speed", 4f);
 			transform.position = Vector3.MoveTowards(transform.position, target.transform.position, Time.deltaTime);
 		} else {

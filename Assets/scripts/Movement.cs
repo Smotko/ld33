@@ -44,10 +44,14 @@ public class Movement : MonoBehaviour {
 		moveTo = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		moveTo.z = transform.position.z;
 
-		// Check if we have a target
-		cl = Physics2D.OverlapPoint(moveTo);
+		cl = null;
+		foreach(Collider2D coll in Physics2D.OverlapCircleAll(moveTo, 0.5f)){
+			if (coll.gameObject.tag == "enemy") {
+				cl = coll;
+			}
+		}
 
-		bool attackingTarget = cl != null && cl.gameObject.tag == "enemy";
+		bool attackingTarget = cl != null;
 		if (attackingTarget) {
 			gameObject.SendMessage("SetTarget", new object[] {cl.gameObject, true});
 		}
