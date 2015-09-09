@@ -191,6 +191,10 @@ MonoBehaviour:
   hasShield: 0
   spriteComponent: {fileID: 0}
   dead: {fileID: 107994, guid: cb2f9e0b777ce4ce2935295863241bf3, type: 2}
+  hurtSounds:
+  - {fileID: 8300000, guid: 7cd60d269000f42d5bb8d5864a6735f5, type: 3}
+  - {fileID: 8300000, guid: 2e2eacb0b1e9d42b3ae8224151e876d7, type: 3}
+  - {fileID: 8300000, guid: 55453dec2e7c24f21a876b313d7b2830, type: 3}
 --- !u!114 &11479010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1331,6 +1335,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: hurtSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Materials.Array.data[0]
       value: 

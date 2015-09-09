@@ -4,6 +4,9 @@ using System.Collections;
 public class Attack : MonoBehaviour {
 
 	public GameObject basicAttack;
+	public AudioClip[] attackSounds;
+
+	private AudioSource audioSource;
 	private float BASIC_COOLDOWN = 0.5f; //seconds
 	private float MULTI_COOLDOWN = 5f;
 	private float SHIELD_COOLDOWN = 5f;
@@ -31,6 +34,7 @@ public class Attack : MonoBehaviour {
 				shield = child.GetComponent<Shield>();
 			}
 		}
+		audioSource = GetComponents<AudioSource>()[1];
 	}
 	
 	// Update is called once per frame
@@ -81,11 +85,15 @@ public class Attack : MonoBehaviour {
 			hasAttackedZergy = true;
 			g.SendMessage("SetTarget", target);
 			lastAttack = BASIC_COOLDOWN;
+			audioSource.clip = attackSounds[Random.Range(0, attackSounds.Length)];
+			audioSource.Play();
 		}
 
 	}
 	void FireMulti() {
 		if (multiAttack < 0) {
+			audioSource.clip = attackSounds[Random.Range(0, attackSounds.Length)];
+			audioSource.Play();
 			GameObject[] all = GameObject.FindGameObjectsWithTag("enemy");
 			for (int i = 0; i < all.Length; i++) {
 				anim.SetTrigger("attacking");
