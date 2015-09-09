@@ -50,6 +50,7 @@ GameObject:
   - 58: {fileID: 5811484}
   - 114: {fileID: 11439332}
   - 114: {fileID: 11435552}
+  - 114: {fileID: 11452654}
   m_Layer: 10
   m_Name: zergy
   m_TagString: enemy
@@ -191,6 +192,19 @@ MonoBehaviour:
   hasShield: 0
   spriteComponent: {fileID: 0}
   dead: {fileID: 107994, guid: cb2f9e0b777ce4ce2935295863241bf3, type: 2}
+--- !u!114 &11452654
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46b0319c45c614e2bb060b051bbb3034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  castShadows: 1
+  recieveShadows: 1
 --- !u!114 &11479010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1282,7 +1296,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: c33b0225b5bf041fcb5f90c08b8b4846, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1334,7 +1348,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+      objectReference: {fileID: 2100000, guid: c33b0225b5bf041fcb5f90c08b8b4846, type: 2}
     - target: {fileID: 0}
       propertyPath: m_Layer
       value: 10

@@ -73,11 +73,11 @@ public class Movement : MonoBehaviour {
 	
 	private void Move() {
 		// Turn the character left or right
+		int direction = -1;
 		if (transform.position.x - moveTo.x < 0) {
-			transform.localEulerAngles = Vector3.zero;
-		} else {
-			transform.localEulerAngles = new Vector3(0, 180, 0);
+			direction = 1;
 		}
+		transform.localScale = new Vector3(direction, 1, 1);
 		// Make the character move
 		animator.SetFloat("speed", speed);
 		transform.position = Vector3.MoveTowards(transform.position, moveTo, speed * Time.deltaTime);
