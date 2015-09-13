@@ -50,11 +50,7 @@ public class Attack : MonoBehaviour {
 			Application.LoadLevel(Application.loadedLevelName);
 		}
 
-		lastAttack -= Time.deltaTime;
-		multiAttack -= Time.deltaTime;
-		lastShield -= Time.deltaTime;
-		shieldDuration -= Time.deltaTime;
-		if (shieldDuration < 0) {
+		if (Time.time > shieldDuration) {
 			shield.Disable();
 		}
 		if (target == null) {
@@ -72,26 +68,26 @@ public class Attack : MonoBehaviour {
 	}
 
 	void Shield() {
-		if (lastShield < 0) {
+		if (Time.time > lastShield) {
 			shield.Enable();
-			lastShield = SHIELD_COOLDOWN;
-			shieldDuration = SHIELD_DURATION;
+			lastShield = Time.time + SHIELD_COOLDOWN;
+			shieldDuration = Time.time + SHIELD_DURATION;
 		}
 	}
 	void FireBasic() {
-		if (lastAttack < 0) {
+		if (Time.time > lastAttack) {
 			anim.SetTrigger("attacking");
 			GameObject g = Instantiate(basicAttack, transform.position, Quaternion.identity) as GameObject;
 			hasAttackedZergy = true;
 			g.SendMessage("SetTarget", target);
-			lastAttack = BASIC_COOLDOWN;
+			lastAttack = Time.time + BASIC_COOLDOWN;
 			audioSource.clip = attackSounds[Random.Range(0, attackSounds.Length)];
 			audioSource.Play();
 		}
 
 	}
 	void FireMulti() {
-		if (multiAttack < 0) {
+		if (Time.time > multiAttack) {
 			audioSource.clip = attackSounds[Random.Range(0, attackSounds.Length)];
 			audioSource.Play();
 			GameObject[] all = GameObject.FindGameObjectsWithTag("enemy");
@@ -100,7 +96,7 @@ public class Attack : MonoBehaviour {
 				GameObject g = Instantiate(basicAttack, transform.position, Quaternion.identity) as GameObject;
 				hasAttackedZergy = true;
 				g.SendMessage("SetTarget", all[i]);
-				multiAttack = MULTI_COOLDOWN;
+				multiAttack = Time.time + MULTI_COOLDOWN;
 			}
 		}
 	}

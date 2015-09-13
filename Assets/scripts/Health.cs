@@ -47,8 +47,10 @@ public class Health : MonoBehaviour {
 		if (!GameManager.instance.playerAlive) {
 			amount = 500;
 		}
-		audioSource.clip = hurtSounds[Random.Range(0, hurtSounds.Length)];
-		audioSource.Play();
+		if (hurtSounds.Length > 0) {
+			audioSource.clip = hurtSounds[Random.Range(0, hurtSounds.Length)];
+			audioSource.Play();
+		}
 
 		health -= amount;
 		if (health <= 0) {

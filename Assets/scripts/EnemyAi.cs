@@ -25,8 +25,8 @@ public class EnemyAi : MonoBehaviour {
 	}
 
 	private void ChangeTarget(GameObject newTarget) {
-		if (lastTarget < 0) {
-			lastTarget = TARGET_CHANGE_COOLDOWN;
+		if (Time.time > lastTarget) {
+			lastTarget = Time.time + TARGET_CHANGE_COOLDOWN;
 			target = newTarget;
 		}
 	}
@@ -39,9 +39,7 @@ public class EnemyAi : MonoBehaviour {
 
 		float playerDist = Vector3.Distance(transform.position, player.transform.position);
 		float coreDist = Vector3.Distance(transform.position, core.transform.position);
-		if (GameManager.instance.coreDestroyed) {
-			return;
-		}
+
 		if (a.hasAttackedZergy && GameManager.instance.playerAlive) {
 			// Attack player if it's closer
 			if (coreDist * 2 < playerDist) {
@@ -53,21 +51,19 @@ public class EnemyAi : MonoBehaviour {
 		} else {
 			ChangeTarget(core);
 		}
-		lastTarget -= Time.deltaTime;
 		if (!target) {
 			return;
 		}
 		float dist = Vector3.Distance(transform.position, target.transform.position);
-		lastAttack -= Time.deltaTime;
 		if (dist > 0.7f) {
 			anim.SetFloat("speed", 4f);
 			transform.position = Vector3.MoveTowards(transform.position, target.transform.position, Time.deltaTime);
 		} else {
 			anim.SetFloat("speed", 0f);
-			if (lastAttack < 0) {
+			if (Time.time > lastAttack) {
 				anim.SetTrigger("attacking");
 				target.SendMessage("Hurt", 10);
-				lastAttack = ATTACK_COOLDOWN;
+				lastAttack = Time.time + ATTACK_COOLDOWN;
 			}
 		}
 
@@ -76,7 +72,7 @@ public class EnemyAi : MonoBehaviour {
 	void Hurt(int amount) {
 		target = player;
 
-		lastTarget = TARGET_CHANGE_COOLDOWN * 10;
+		lastTarget = Time.time + TARGET_CHANGE_COOLDOWN;
 		sprite.color = Color.red;
 		Invoke ("ResetColor", 0.1f);
 	}
