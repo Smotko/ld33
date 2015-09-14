@@ -153,6 +153,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -262,9 +263,9 @@ MonoBehaviour:
   spriteComponent: {fileID: 0}
   dead: {fileID: 107994, guid: cb2f9e0b777ce4ce2935295863241bf3, type: 2}
   hurtSounds:
-  - {fileID: 8300000, guid: 3de9e4f14d9a740a9ab35bf099046e73, type: 3}
-  - {fileID: 8300000, guid: 2e882669774c640bdafbaaed06f153b5, type: 3}
-  - {fileID: 8300000, guid: b52ac115158054038b819839dc404242, type: 3}
+  - {fileID: 8300000, guid: 4ae6f595d8cf0494894b4c7b924eee84, type: 3}
+  - {fileID: 8300000, guid: 812aa4e0be9cf447e965bf3b848e4e75, type: 3}
+  - {fileID: 8300000, guid: ebe7704fa852a435193733ddf480ca0e, type: 3}
 --- !u!114 &11479010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1424,27 +1425,27 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: hurtSounds.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 3de9e4f14d9a740a9ab35bf099046e73, type: 3}
+      objectReference: {fileID: 8300000, guid: 4ae6f595d8cf0494894b4c7b924eee84, type: 3}
     - target: {fileID: 0}
       propertyPath: hurtSounds.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: 2e882669774c640bdafbaaed06f153b5, type: 3}
+      objectReference: {fileID: 8300000, guid: 812aa4e0be9cf447e965bf3b848e4e75, type: 3}
     - target: {fileID: 0}
       propertyPath: hurtSounds.Array.data[2]
       value: 
-      objectReference: {fileID: 8300000, guid: b52ac115158054038b819839dc404242, type: 3}
+      objectReference: {fileID: 8300000, guid: ebe7704fa852a435193733ddf480ca0e, type: 3}
     - target: {fileID: 0}
       propertyPath: hurtSounds.Array.data[3]
       value: 
-      objectReference: {fileID: 8300000, guid: b52ac115158054038b819839dc404242, type: 3}
+      objectReference: {fileID: 8300000, guid: 5122cb577bfd2422ebc2d74463504abc, type: 3}
     - target: {fileID: 0}
       propertyPath: hurtSounds.Array.data[4]
       value: 
-      objectReference: {fileID: 8300000, guid: b52ac115158054038b819839dc404242, type: 3}
+      objectReference: {fileID: 8300000, guid: 3cfea7c7e38994f6fbf401c6f1f9b6f6, type: 3}
     - target: {fileID: 0}
       propertyPath: hurtSounds.Array.data[5]
       value: 
-      objectReference: {fileID: 8300000, guid: b52ac115158054038b819839dc404242, type: 3}
+      objectReference: {fileID: 8300000, guid: 0f4a0d1a2ebfe44838eb2deb37b8d614, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 179762}

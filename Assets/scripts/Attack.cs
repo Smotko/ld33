@@ -81,15 +81,19 @@ public class Attack : MonoBehaviour {
 			hasAttackedZergy = true;
 			g.SendMessage("SetTarget", target);
 			lastAttack = Time.time + BASIC_COOLDOWN;
-			audioSource.clip = attackSounds[Random.Range(0, attackSounds.Length)];
-			audioSource.Play();
+			if (attackSounds.Length > 0) {
+				audioSource.clip = attackSounds[Random.Range(0, attackSounds.Length)];
+				audioSource.Play();
+			}
 		}
 
 	}
 	void FireMulti() {
 		if (Time.time > multiAttack) {
-			audioSource.clip = attackSounds[Random.Range(0, attackSounds.Length)];
-			audioSource.Play();
+			if (attackSounds.Length > 0){
+				audioSource.clip = attackSounds[Random.Range(0, attackSounds.Length)];
+				audioSource.Play();
+			}
 			GameObject[] all = GameObject.FindGameObjectsWithTag("enemy");
 			for (int i = 0; i < all.Length; i++) {
 				anim.SetTrigger("attacking");
