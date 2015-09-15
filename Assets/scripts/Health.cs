@@ -7,7 +7,9 @@ public class Health : MonoBehaviour {
 	public bool hasShield = false;
 	public GameObject spriteComponent;
 	public GameObject dead;
-	
+	public AudioClip[] hurtSounds;
+
+	private AudioSource audioSource;	
 	private Attack attack;
 	private SpriteRenderer sprite;
 	private ParticleSystem blood;
@@ -23,6 +25,7 @@ public class Health : MonoBehaviour {
 			sprite = GetComponent<SpriteRenderer>();
 		}
 		blood = GetComponentInChildren<ParticleSystem>();
+		audioSource = GetComponent<AudioSource>();
 
 	}
 	
@@ -39,9 +42,14 @@ public class Health : MonoBehaviour {
 		}
 		sprite.color = Color.red;
 		Invoke ("ResetColor", 0.1f);
+
 		blood.Play();
 		if (!GameManager.instance.playerAlive) {
 			amount = 500;
+		}
+		if (hurtSounds.Length > 0) {
+			audioSource.clip = hurtSounds[Random.Range(0, hurtSounds.Length)];
+			audioSource.Play();
 		}
 
 		health -= amount;
