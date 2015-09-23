@@ -4,17 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - BG
-  - score
-  - click
   - enemy
-  - core
   - shield
   - text_end1
-  - text_end2
-  - text_end3
-  - text_end4
-  - gm
+  - core
   layers:
   - Default
   - TransparentFX
@@ -24,10 +17,10 @@ TagManager:
   - UI
   - 
   - 
-  - BG
-  - FG
-  - Monster
-  - Player
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -52,21 +45,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: BG
-    uniqueID: 3424481375
-    locked: 0
-  - name: Cursor
-    uniqueID: 4131157921
+  - name: Background
+    uniqueID: 363709539
     locked: 0
   - name: Characters
-    uniqueID: 139475285
-    locked: 0
-  - name: foreground
-    uniqueID: 3082279733
-    locked: 0
-  - name: healthabrs
-    uniqueID: 834132437
+    uniqueID: 1254551051
     locked: 0
   - name: UI
-    uniqueID: 419894505
+    uniqueID: 15473857
     locked: 0

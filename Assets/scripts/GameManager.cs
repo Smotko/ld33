@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour {
 	public GameObject end4;
 	public GameObject start;
 	public GameObject image;
+	public Light sun;
+
+	private int DAY_LENGTH = 260;
 
 	void Awake() {
 		// Poor man's singleton
@@ -23,6 +26,7 @@ public class GameManager : MonoBehaviour {
 		playerAlive = true;
 		coreDestroyed = false;
 		gameActive = false;
+
 	}
 
 	void Update() {
@@ -31,6 +35,7 @@ public class GameManager : MonoBehaviour {
 			image.SetActive(false);
 			start.SetActive(false);
 		}
+		sun.intensity = ((DAY_LENGTH - Time.time) / DAY_LENGTH);
 	}
 
 	public void ObjectDestroyed(GameObject gameObject) {
